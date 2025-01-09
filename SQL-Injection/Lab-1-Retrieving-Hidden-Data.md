@@ -1,4 +1,4 @@
-Lab 01: SQL Injection Básica na Cláusula WHERE
+## Lab 01: SQL Injection Básica na Cláusula WHERE
 
 Descrição do Lab
 O objetivo deste laboratório é explorar uma vulnerabilidade de SQL Injection presente na cláusula WHERE da aplicação. A aplicação permite que os usuários filtrem produtos por categorias, mas não valida corretamente os parâmetros fornecidos pelo cliente, permitindo manipulações maliciosas na consulta SQL.
