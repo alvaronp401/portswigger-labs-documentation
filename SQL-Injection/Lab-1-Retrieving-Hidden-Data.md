@@ -1,15 +1,14 @@
-Descrição do Lab
+##Descrição do Lab
 Este laboratório apresenta uma vulnerabilidade de SQL Injection em uma consulta SQL usada para filtrar produtos por categoria. O objetivo é manipular a consulta para exibir produtos não lançados que estão ocultos por padrão.
 
 A consulta original da aplicação é semelhante a:
 
-sql
-Copiar código
+##sql
 SELECT * FROM products WHERE category = 'Gifts' AND released = 1
 Vamos modificar essa consulta para ignorar o filtro AND released = 1, forçando a aplicação a exibir todos os produtos.
 
-Passos Realizados
-1. Interceptando a Requisição
+##Passos Realizados
+#1. Interceptando a Requisição
 Acessei o laboratório e cliquei em uma categoria para capturar a requisição enviada ao servidor.
 Usei o Burp Suite para interceptar a requisição HTTP. A requisição capturada tinha o seguinte formato:
 http
