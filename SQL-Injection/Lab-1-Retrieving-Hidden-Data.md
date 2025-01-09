@@ -10,3 +10,16 @@ A consulta SQL usada na aplicação para filtrar os produtos por categoria e ver
 
 ```sql
 SELECT * FROM products WHERE category = 'Gifts' AND released = 1;
+
+---
+
+## Passos Realizados
+
+### 1. Interceptando a Requisição
+
+A primeira etapa foi acessar o laboratório e capturar a requisição HTTP enviada ao servidor. Utilizei o **Burp Suite** para interceptar a requisição, que tinha o seguinte formato:
+
+```http
+GET /filter?category=Gifts HTTP/1.1
+Host: <host_do_lab>
+Cookie: session=<session_id>
